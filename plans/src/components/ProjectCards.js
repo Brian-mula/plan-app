@@ -39,7 +39,10 @@ function ProjectCards({ project }) {
           }
           title={project.name}
         />
-        <CardMedia component="img" image={project.photo} />
+        <CardMedia
+          component="img"
+          image={project.photo ? project.photo : "assets/plans.png"}
+        />
         <CardContent className={classes.cardcontent}>
           <Typography variant="body2" color="secondary">
             {project.value}
